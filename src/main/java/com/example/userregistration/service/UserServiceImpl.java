@@ -9,12 +9,14 @@ import java.util.List;
 public class UserServiceImpl implements UserService{
     @Override
     public UserDto save(UserDto department) {
+        //TODO add logic
         return null;
     }
 
     @Override
     public List<UserDto> fetch() {
-        return List.of();
+        //TODO add logic
+    return List.of();
     }
 
     @Override
@@ -24,6 +26,6 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void deleteById(Long id) {
-
+        //TODO add logic
     }
 }
