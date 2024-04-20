@@ -11,4 +11,5 @@ public class UserDto {
     private String name;
     private String address;
     private String passport;
+    private String password;
 }

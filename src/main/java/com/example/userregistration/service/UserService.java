@@ -8,7 +8,7 @@ import java.util.List;
 public interface UserService {
 
 
-    UserDto save(UserDto department);
+    UserDto save(UserDto user);
 
     List<UserDto> fetch();
 
