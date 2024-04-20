@@ -2,7 +2,6 @@ package com.example.userregistration.controller;
 
 import com.example.userregistration.model.UserDto;
 import com.example.userregistration.service.UserService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

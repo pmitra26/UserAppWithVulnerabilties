@@ -1,7 +1,6 @@
 package com.example.userregistration.service;
 
 import com.example.userregistration.model.UserDto;
-import com.example.userregistration.model.UserEntity;
 
 import java.util.List;
 
