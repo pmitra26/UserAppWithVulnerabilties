@@ -1,5 +1,6 @@
 package com.example.userregistration.service;
 
+import com.example.userregistration.configuration.Constants;
 import com.example.userregistration.model.RecoveryData;
 import com.example.userregistration.model.UserDto;
 import com.example.userregistration.model.UserEntity;
@@ -56,7 +57,7 @@ public class UserServiceImpl implements UserService{
     @Override
     public void sendUserRecovery(String name, RecoveryData recoveryData) throws MalformedURLException, URISyntaxException {
        URL changePwdUrl = new URL(recoveryData.getRecoveryUrl()) ;
-       String message = "<a href="+ changePwdUrl+">";
+       String message = "<a href="+ changePwdUrl+">" + Constants.USER_PASSWORD_RECOVERY_EMAIL_HREF +"</a>";
         RestTemplate restTemplate = new RestTemplate();
 
         URI notificationUrl = new URI("http://laa:8080/notification");

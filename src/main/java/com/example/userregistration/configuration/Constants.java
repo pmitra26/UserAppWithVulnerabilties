@@ -2,5 +2,6 @@ package com.example.userregistration.configuration;
 
 public class Constants {
 
-    private static final String password= "XQUENDGHDB";
+    public static final String PASSWORD = "XQUENDGHDB";
+    public static final String USER_PASSWORD_RECOVERY_EMAIL_HREF = "";
 }
