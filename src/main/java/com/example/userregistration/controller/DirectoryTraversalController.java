@@ -24,6 +24,8 @@ public class DirectoryTraversalController {
     public ResponseEntity<Map<String, String>> nioRead(@RequestParam(value = "file", required = false) String fileName) throws IOException {
         String result = Files.lines(Paths.get("src/main/resources/static/" + fileName), StandardCharsets.UTF_8)
                 .collect(Collectors.joining("\n"));
+        String result1 = Files.lines(Paths.get("src/main/resources/static/" + fileName), StandardCharsets.UTF_8)
+                .collect(Collectors.joining("\n"));
 
         Map<String, String> responseMap = new HashMap<>();
         responseMap.put("param", result);
