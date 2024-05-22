@@ -34,7 +34,7 @@ jobs:
         with:         
           format: sarif
           output: results.sarif
-          exit-code: 0
+          #exit-code: 0
       # Scan code using Bearer CLI
       # - name: Run Report
       #   id: report
